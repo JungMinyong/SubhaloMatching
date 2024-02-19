@@ -10,7 +10,7 @@ Merger tree and Group catalogs of the TNG simulations are required.
 
 1. `cd SubhaloMatching`
 2. Run `python preprocessing_tree.py` to save main progenitors
-3. Run `python parameter_train-valid.py --batch 32 --num_worker 48 --eval_every 2 --tng50` for training
+3. Run `python parameter_train-valid.py --batch 32 --num_worker 16 --eval_every 2 --tng50` for training
 4. Run `python matching.py --tng50` to apply the model to the target galaxy
 
 You can create matching catalogs using the code snippets in `extract_ids.py`. The pre-trained state files are located in the `models` folder.
